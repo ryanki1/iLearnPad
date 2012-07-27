@@ -1,0 +1,14 @@
+<img src="nannas320.png" width="416" height="312" border="0" usemap="#map" />
+
+<map name="map">
+<!-- #$-:Image map file created by GIMP Image Map plug-in -->
+<!-- #$-:GIMP Image Map plug-in by Maurits Rijk -->
+<!-- #$-:Please do not edit lines starting with "#$" -->
+<!-- #$VERSION:2.3 -->
+<!-- #$AUTHOR:RYANKI1   -->
+<area shape="poly" coords="244,237,243,172,316,175,315,248,245,237" alt="Oven" href="#" />
+<area shape="poly" coords="164,89,158,93,159,104,169,107,173,100,170,93,167,90" alt="Clock" href="#" />
+<area shape="poly" coords="2,213,66,186,244,206,239,216,238,304,102,305,102,289,45,269,14,280,1,215" alt="Bar" href="#" />
+<area shape="poly" coords="117,3,116,22,114,27,109,37,104,45,106,52,113,54,126,51,130,49,134,47,134,38,132,34,125,29,123,23,122,11,121,1,119,1" alt="Light" href="#" />
+<area shape="poly" coords="127,53,129,56,135,57,135,68,137,72,141,73,142,72,140,69,140,67,142,62,147,66,152,65,147,61,146,61,150,58,149,55,146,51,145,47,142,42,140,42,138,40,141,37,139,34,137,30,135,29,134,30,133,34,134,36,134,39,135,46,134,48,131,49,127,51,127,55,134,57,135,67" alt="Dolly" href="#" />
+</map>

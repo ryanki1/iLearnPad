@@ -1,0 +1,178 @@
+<!DOCTYPE html> 
+<html> 
+	<head>	
+	<title>iLearnPad</title> 
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- For the duration of debugging START --> 
+	<META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
+	<META HTTP-EQUIV="PRAGMA" CONTENT="NO-CACHE">
+	<!-- For the duration of debugging END -->
+	<!-- http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.css -->
+	<link rel="stylesheet" href="css/themes/iLearnPad.min.css" />
+	<link rel="stylesheet" href="css/jquery.mobile.structure-1.1.1.css" /> 
+	<link rel="stylesheet" href="css/splashscreen.css" />
+	<script src="js/jquery-1.7.2.min.js"></script>
+	<script src="js/splashscreen.js"></script> 
+	<!--<script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.js"></script>-->
+</head> 
+<body id="pages">
+	
+	
+	<!--<div id='splash' data-role='page' >
+	   	<div style="align:center">
+	        <img src="images/content/doggy320.png" />
+	    </div>
+	</div>-->      
+
+    <div id='menu' data-role='page'>
+    	
+    	<div data-role='header' data-position="fixed">
+    		<div>
+    			<div style="height: 35px; text-align: right; padding-right: 15px;">
+					<a href="#sponsorMenu" data-rel="dialog" data-role="button" data-theme="a" data-icon="gear" data-iconpos="notext" data-inline="true" data-transition="pop" title="Sponsors"></a>						 
+				</div>
+				<div style="text-align: center; margin-top: -20px; margin-bottom: -20px;">
+					<h1>iLearnPad</h1>
+				</div>
+			</div>
+		</div>
+		
+		<div data-role='content'>
+			<ul id='menuContent' data-role="listview" data-inset="true" data-theme="g">
+				
+			</ul>
+		</div>
+		
+        <div data-role='footer' data-position="fixed">
+        	<div style="text-align:center;">
+	    		<a href='#menu' class='homeButton home' data-transition="flip">
+	    			<img src='images/mgst.png'/>
+	    		</a>
+    		</div>
+        </div>
+        
+    </div>
+
+	<!--<li id='li<%= title %>'>
+		<a href='#content<%= title %>'>
+			<img id='<%= title %>' src='<%= pathMenu %>' alt='<%= title %>'/>
+		</a>
+	</li>
+	
+	-->
+	
+	<div id="page">
+	    <div id="topBar"></div>
+	
+	    <div id="promoIMG">
+	    	<img src="images/content/doggy320.png" alt="iLearnPad" />
+	    </div>
+	
+	    <div id="contentArea">
+	        <p></p>
+	    </div>
+	</div>
+	
+	<script id='cartTemplate' type='text/template'>   
+		<div class="ui-btn-inner ui-li ui-corner-top">		
+			<div class="ui-btn-text">
+				<a href='#content<%= title %>' data-transition="slide" class="ui-link-inherit">
+					<img id='<%= title %>' src='<%= pathMenu %>' alt='<%= title %>'/>
+				</a>
+			</div>	
+			<span class="ui-icon ui-icon-arrow-r ui-icon-shadow">&nbsp;</span>		
+		</div>	
+	</script> 
+	
+    <div id='sponsorMenu' data-role='page'>
+    	
+    	<div data-role='header' data-position="fixed">
+			<h1 class="hide4Splash">Sponsors</h1>
+		</div>
+   
+		<div data-role='content'>	
+			<ul id='sponsorContent' data-role="listview" data-inset="true" data-theme="g">
+				
+			</ul>
+		</div>
+		
+		<div data-role='footer' data-position="fixed">
+			<div style="text-align:center;">
+	    		<a href='#' data-rel="back" data-role="button"><span class="hide4Splash">Cancel</span></a>
+    		</div>
+			
+		</div>
+		
+    </div>
+	
+	<script id='sponsorTemplate' type='text/template'> 
+		  
+		<div style="text-align:center">  
+			<a href='<%= href %>' title="<%= title %>"><img id='img<%= title %>' src='<%= imageSrc %>' alt='<%= imageAlt %>' border='0'/></a>
+			<br/>
+			<span><%= title %></span>
+		</div>
+		
+        
+	</script>
+
+    <!--<div id='content<%= title %>' data-role='page'>
+    	
+    	<div data-role='header'>
+	        <a href='#menu' data-role='button' data-rel='back'>Back</a>
+			<h1><%= title %></h1>
+		</div>
+   
+		<div data-role='content'>	
+			<img id='img<%= title %>' src='<%= pathPortrait %>' class='touch' alt='<%= title %>' border='0'/>	
+		</div>
+		
+        <div data-role='footer'>
+    		<a href='#' class='homeButton home'>
+    			<img src='images/mgst.png'/>
+    		</a>
+        </div>
+        
+    </div>-->
+
+	<script id='itemTemplate' type='text/template'>
+	
+    	<div data-role='header' data-position="fixed">
+	        <a href='#menu' data-role='button' data-rel='back'>Back</a>
+			<h1><%= title %></h1>
+		</div>
+   
+		<div data-role='content'>	
+			<img id='img<%= title %>' src='<%= pathPortrait %>' alt='<%= title %>' border='0'/>	
+			<map name="<%= usemapPortrait %>">
+				<!-- #$-:Image map file created by GIMP Image Map plug-in -->
+				<!-- #$-:GIMP Image Map plug-in by Maurits Rijk -->
+				<!-- #$-:Please do not edit lines starting with "#$" -->
+				<!-- #$VERSION:2.3 -->
+				<!-- #$AUTHOR:RYANKI1  -->
+				<area id="area<%= title %><%= words[0] %>" shape="poly" coords="<%= coords[0] %>" alt="<%= words[0] %>" title="<%= words[0] %>" href="javascript:void(0);"/>
+				<area id="area<%= title %><%= words[1] %>" shape="poly" coords="<%= coords[1] %>" alt="<%= words[1] %>" title="<%= words[1] %>" href="javascript:void(0);"/>
+				<area id="area<%= title %><%= words[2] %>" shape="poly" coords="<%= coords[2] %>" alt="<%= words[2] %>" title="<%= words[2] %>" href="javascript:void(0);"/>
+				<area id="area<%= title %><%= words[3] %>" shape="poly" coords="<%= coords[3] %>" alt="<%= words[3] %>" title="<%= words[3] %>" href="javascript:void(0);"/>
+				<area id="area<%= title %><%= words[4] %>" shape="poly" coords="<%= coords[4] %>" alt="<%= words[4] %>" title="<%= words[4] %>" href="javascript:void(0);"/>
+			</map>
+		</div>
+		
+        <div data-role='footer' data-position="fixed">
+        	<div style="text-align:center;">
+	    		<a href='#menu' class='homeButton home' data-transition="flip">
+	    			<img src='images/mgst.png'/>
+	    		</a>
+    		</div>
+        </div>
+	    
+	</script>
+
+	<script src="js/jquery.mobile-1.1.1.min.js"></script>
+	<script src="js/underscore.js"></script>
+	<script src="js/backbone.js"></script>
+    <script src="js/iLearnPad.js"></script>    
+    
+</body>
+</html>
